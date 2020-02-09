@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/irjqoecz/repositories/afnjoyeria/
+    - export DEPLOYPATH=/home/irjqoecz/public_html/testjoyeria/
     - /bin/cp * $DEPLOYPATH
