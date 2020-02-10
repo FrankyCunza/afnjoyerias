@@ -4,4 +4,11 @@
         width: 100%;
         display: block;
     }
+
+    &__card{
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
 }
