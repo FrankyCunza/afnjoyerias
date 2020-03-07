@@ -5,6 +5,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="" class="logo__src">
             </div>
         </div>
+		<p>Joyerias AFN</p>
         <div class="row">
             <div class="col col-md-2">
                 <div class="card homeProducts__card">
