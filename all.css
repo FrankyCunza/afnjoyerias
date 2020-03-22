@@ -93,8 +93,18 @@ body {
 .homeProducts__img {
   width: 100%;
   display: block; }
+.homeProducts__text {
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Work Sans", sans-serif; }
+.homeProducts__title {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500; }
 .homeProducts__card {
-  transition: all .5s; }
+  transition: all .5s;
+  padding-bottom: 20px; }
   .homeProducts__card:hover {
     transform: scale(1.02); }
 

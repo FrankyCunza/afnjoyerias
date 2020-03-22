@@ -1,12 +1,25 @@
 .homeProducts{
-
+    
     &__img{
         width: 100%;
         display: block;
     }
+    
+    &__text{
+        text-align: center;
+        margin-top: 5px;
+        font-family: $font_one;
+    }
+    &__title{
+        font-family: $font_one;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 500;
+    }
 
     &__card{
         transition: all .5s;
+        padding-bottom: 20px;;
         &:hover{
             transform: scale(1.02);
         }
