@@ -2,10 +2,12 @@
 <div class="container">
         <div class="row">
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="" class="logo__src">
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="" class="logo__src"> -->
+                <h1>JOYERÍAS AFN</h1>
             </div>
         </div>
         <div class="row">
+            <h2 class="title__two">Anillos</h2>
             <div class="col col-md-2">
                 <div class="card homeProducts__card">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rings/1.png" alt="" class="homeProducts__img">
