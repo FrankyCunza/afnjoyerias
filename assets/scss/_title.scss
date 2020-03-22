@@ -1,8 +1,11 @@
 .title{
 
+    &__one{
+        
+    }
     &__two{
         font-family: $font_one;
-        font-size: 20px;
+        font-size: 26px;
         padding: 0 $padding;
         font-weight: 600;
     }

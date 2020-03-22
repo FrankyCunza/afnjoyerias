@@ -1,9 +1,13 @@
 .logo{
     background: $color_two;
-    padding: 20px;
+    padding: 15px 20px;
     display: table;
     margin: 0 auto 20px auto;
 
+    &__title{
+        font-family: $font_two;
+        font-size: 44px;
+    }
     &__src{
         max-width: 60px;
         width: 100%;

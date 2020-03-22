@@ -1,11 +1,17 @@
 <?php get_header(); ?>
-<div class="container">
-        <div class="row">
+<div class="header">
+    <div class="container">
+        <div class="header__logo">
             <div class="logo">
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="" class="logo__src"> -->
-                <h1>JOYERÍAS AFN</h1>
+                <h1 class="logo__title">JOYERÍAS AFN</h1>
             </div>
         </div>
+        <nav class="header__menu">
+            
+        </nav>
+    </div>
+</div>
+<div class="container">
         <div class="row">
             <h2 class="title__two">Anillos</h2>
             <div class="col col-md-2">
