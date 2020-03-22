@@ -16,11 +16,18 @@
     margin-top: -15px;
     width: 100%;
     overflow: hidden;
+
+    @media screen and (max-width: 480px){
+        margin: 0;
+    }
 }
 .col{
     padding: 0 12px;
     box-sizing: border-box;
     float: left;
+    @media screen and (max-width: 480px){
+        padding: 0 5px;
+    }
 }
 
 .col-md-2{
@@ -29,6 +36,9 @@
 
     @media screen and (max-width: 480px){
         width: 50%;
+    }
+    @media screen and (max-width: 320px){
+        width: 100%;
     }
 }
 

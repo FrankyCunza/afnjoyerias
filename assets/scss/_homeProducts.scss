@@ -1,5 +1,6 @@
 .homeProducts{
     
+    
     &__img{
         width: 100%;
         display: block;
@@ -22,6 +23,9 @@
         padding-bottom: 20px;;
         &:hover{
             transform: scale(1.02);
+        }
+        @media screen and (max-width: 480px){
+            min-height: 200px;
         }
     }
 }
