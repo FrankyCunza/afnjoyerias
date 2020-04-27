@@ -1,11 +1,12 @@
 .logo{
-    background: $color_two;
-    padding: 15px 20px;
-    display: table;
-    margin: 0 auto 20px auto;
+    // background: $color_two;
+    padding: 15px 0;
+    // display: table;
+    // margin: 0 auto 20px auto;
 
     &__title{
         font-family: $font_two;
+        text-align: center;
         font-size: 44px;
     }
     &__src{

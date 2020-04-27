@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,24 +48,50 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #E7E7E9; }
+  background: #F7F7F7;
+  font-family: "Work Sans", sans-serif; }
 
 @font-face {
   font-family: 'Vevey';
   src: url("../fonts/Vevey.woff2") format("woff2"), url("../fonts/Vevey.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+.header {
+  background: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+  position: relative; }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__socials__title, .header__socials__menu {
+    display: inline-block; }
+  .header__socials__list {
+    display: inline-block; }
+  .header__number, .header__email {
+    display: inline-block;
+    line-height: 75px; }
+    .header__number i, .header__email i {
+      margin-right: 5px; }
+  .header__email {
+    margin-left: 15px; }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
 .container {
-  max-width: 1620px;
+  max-width: 1356px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   .container .row + .row {
     margin-top: 20px; }
 
 .row {
   margin-left: -12px;
   margin-right: -12px;
-  margin-top: -15px;
   width: 100%;
   overflow: hidden; }
   @media screen and (max-width: 480px) {
@@ -90,14 +117,14 @@ body {
       width: 100%; } }
 
 .col-md-3 {
-  width: 25%;
+  width: 33.33%;
   margin-top: 15px; }
   @media screen and (max-width: 480px) {
     .col-md-3 {
       width: 50%; } }
 
 .col-md-4 {
-  width: 33.33%;
+  width: 25%;
   margin-top: 15px; }
   @media screen and (max-width: 480px) {
     .col-md-4 {
@@ -109,13 +136,28 @@ body {
 .homeProducts__text {
   text-align: center;
   margin-top: 5px;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  display: -webkit-box;
+  font-size: 15px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding: 0 25px;
+  overflow: hidden; }
 .homeProducts__title {
   font-family: "Work Sans", sans-serif;
   text-align: center;
   margin-top: 10px;
-  font-weight: 500; }
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px; }
+.homeProducts__price {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif; }
+  .homeProducts__price span {
+    font-weight: 500; }
 .homeProducts__card {
+  background: #ffffff;
   transition: all .5s;
   padding-bottom: 20px; }
   .homeProducts__card:hover {
@@ -125,12 +167,10 @@ body {
       min-height: 200px; } }
 
 .logo {
-  background: #F1F2F2;
-  padding: 15px 20px;
-  display: table;
-  margin: 0 auto 20px auto; }
+  padding: 15px 0; }
   .logo__title {
     font-family: "Vevey";
+    text-align: center;
     font-size: 44px; }
   .logo__src {
     max-width: 60px;
@@ -141,8 +181,120 @@ body {
 
 .title__two {
   font-family: "Work Sans", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   padding: 0 12px;
   font-weight: 600; }
+
+.home__text {
+  padding: 45px 0 50px 0;
+  line-height: 20px;
+  display: -webkit-box; }
+
+.menu li {
+  display: inline-block; }
+.menu li + li {
+  margin-left: 5px; }
+.menu a {
+  text-decoration: none;
+  color: #181817;
+  line-height: 75px; }
+
+.homeDetails__row {
+  padding-top: 45px; }
+.homeDetails__ico {
+  background: #FF8000;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  line-height: 106px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: -52px;
+  transform: translateX(-50%); }
+.homeDetails__card {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  padding: 20px 20px 30px 20px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  min-height: 240px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+.homeDetails__title {
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: 500; }
+.homeDetails__text {
+  margin-top: 15px;
+  display: block;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 18px; }
+
+.homeOpinions__top {
+  position: relative; }
+  .homeOpinions__top:before {
+    content: '';
+    height: 2px;
+    width: 1000%;
+    display: block;
+    position: absolute;
+    background: #202020;
+    top: 50%;
+    left: -250%;
+    z-index: 1;
+    transform: translateY(-50%); }
+.homeOpinions__title {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: table;
+  position: relative;
+  padding: 0 20px;
+  margin: 20px auto;
+  z-index: 2;
+  background: #F7F7F7; }
+.homeOpinions__box {
+  text-align: center; }
+.homeOpinions__name, .homeOpinions__country {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  font-weight: 500; }
+.homeOpinions__country {
+  margin: 10px; }
+.homeOpinions__text {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 25px; }
+.homeOpinions__image {
+  display: block;
+  margin-bottom: 10px; }
+.homeOpinions__stars {
+  margin-bottom: 10px; }
+  .homeOpinions__stars__list {
+    display: inline-block; }
+    .homeOpinions__stars__list i {
+      color: #FF8000; }
+
+.footer {
+  background: #FF8000;
+  line-height: 57px;
+  margin-top: 55px;
+  text-align: center; }
+  .footer__text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500; }
 
 /*# sourceMappingURL=all.css.map */

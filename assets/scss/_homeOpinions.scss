@@ -1,0 +1,65 @@
+.homeOpinions{
+
+    &__top{
+        position: relative;
+        &:before{
+            content: '';
+            height: 2px;
+            width: 1000%;
+            display: block;
+            position: absolute;
+            background: #202020;
+            top: 50%;
+            left: -250%;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: table;
+        position: relative;
+        padding: 0 20px;
+        margin: 20px auto;
+        z-index: 2;
+        background: $color_four;
+    }
+    &__boxes{
+        
+    }
+    &__box{
+        text-align: center;
+    }
+    &__name, &__country{
+        font-family: $font_one;
+        font-size: 16px;
+        color: $color__black;
+        font-weight: 500;
+    }
+    &__country{
+        margin: 10px ;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 25px;
+    }
+    &__image{
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__stars{
+        margin-bottom: 10px;
+        &__menu{
+
+        }
+        &__list{
+            display: inline-block;
+            i{
+                color: $color__five;
+            }
+        }
+    }
+}
