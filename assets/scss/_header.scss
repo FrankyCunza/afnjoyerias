@@ -7,12 +7,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: $tablet){
+            flex-direction: column;
+        }
     }
     &__menu, &__logo{
 
     }
     &__info{
         // float: left;
+        @media screen and (max-width: $tablet){
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__socials{
 
@@ -43,16 +51,26 @@
                 background: $color__linkedin;
             }
         }
+        @media screen and (max-width: $tablet){
+            display: none;
+        }
     }
     &__number, &__email{
         display: inline-block;
         line-height: 75px;
+        @media screen and (max-width: $tablet){
+            line-height: 30px;
+            font-size: 14px;
+        }
         i{
             margin-right: 5px;
         }
     }
     &__email{
         margin-left: 15px;
+        @media screen and (max-width: $tablet){
+            margin-left: 0;
+        }
     }
     &__logo{
         position: absolute;
@@ -60,6 +78,12 @@
         top: 50%;
         transform: translate(-50%, -50%);
         // float: left;
+        @media screen and (max-width: $tablet){
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+        }
     }
     &__menu{
         // float: right;

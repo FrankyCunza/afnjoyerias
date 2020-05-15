@@ -2,8 +2,14 @@
     max-width: 1356px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
     // padding-bottom: 100px;
     overflow: hidden;
+
+    @media screen and (max-width: $tablet){
+        padding: 0 10px;
+    }
 
     .row + .row{
         margin-top: 20px;
@@ -48,7 +54,7 @@
     margin-top: 15px;
 
     @media screen and (max-width: 480px){
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -57,7 +63,7 @@
     margin-top: 15px;
 
     @media screen and (max-width: 480px){
-        width: 50%;
+        width: 100%;
     }
 }
 

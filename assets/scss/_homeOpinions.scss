@@ -25,6 +25,10 @@
         margin: 20px auto;
         z-index: 2;
         background: $color_four;
+        @media screen and (max-width: $tablet){
+            text-align: center;
+            line-height: 28px;
+        }
     }
     &__boxes{
         

@@ -28,7 +28,7 @@
                 <h1 class="logo__title">JOYERÍAS AFN</h1>
             </div>
         </div>
-        <div class="haader__socials">
+        <div class="header__socials">
             <p class="header__socials__title">Siguenos:</p>
             <ul class="header__socials__menu">
                 <li class="header__socials__list"><a href="#"><i class="fab fa-facebook-f"></i></a></li>

@@ -3,6 +3,9 @@
     padding: 15px 0;
     // display: table;
     // margin: 0 auto 20px auto;
+    @media screen and (max-width: $tablet){
+        padding: 0;
+    }
 
     &__title{
         font-family: $font_two;

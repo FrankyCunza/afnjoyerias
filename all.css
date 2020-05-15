@@ -51,6 +51,9 @@ body {
   background: #F7F7F7;
   font-family: "Work Sans", sans-serif; }
 
+.none {
+  display: none; }
+
 @font-face {
   font-family: 'Vevey';
   src: url("../fonts/Vevey.woff2") format("woff2"), url("../fonts/Vevey.woff") format("woff");
@@ -64,6 +67,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .header .container {
+        flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    .header__info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; } }
   .header__socials__title, .header__socials__menu {
     display: inline-block; }
   .header__socials__list {
@@ -82,24 +93,45 @@ body {
       background: #DD27AB; }
     .header__socials__list:nth-child(3) {
       background: #0E76A8; }
+  @media screen and (max-width: 768px) {
+    .header__socials {
+      display: none; } }
   .header__number, .header__email {
     display: inline-block;
     line-height: 75px; }
+    @media screen and (max-width: 768px) {
+      .header__number, .header__email {
+        line-height: 30px;
+        font-size: 14px; } }
     .header__number i, .header__email i {
       margin-right: 5px; }
   .header__email {
     margin-left: 15px; }
+    @media screen and (max-width: 768px) {
+      .header__email {
+        margin-left: 0; } }
   .header__logo {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+    @media screen and (max-width: 768px) {
+      .header__logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none; } }
 
 .container {
   max-width: 1356px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 10px; } }
   .container .row + .row {
     margin-top: 20px; }
 
@@ -135,14 +167,14 @@ body {
   margin-top: 15px; }
   @media screen and (max-width: 480px) {
     .col-md-3 {
-      width: 50%; } }
+      width: 100%; } }
 
 .col-md-4 {
   width: 25%;
   margin-top: 15px; }
   @media screen and (max-width: 480px) {
     .col-md-4 {
-      width: 50%; } }
+      width: 100%; } }
 
 .homeProducts__img {
   width: 100%;
@@ -182,6 +214,9 @@ body {
 
 .logo {
   padding: 15px 0; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      padding: 0; } }
   .logo__title {
     font-family: "Vevey";
     text-align: center;
@@ -278,6 +313,10 @@ body {
   margin: 20px auto;
   z-index: 2;
   background: #F7F7F7; }
+  @media screen and (max-width: 768px) {
+    .homeOpinions__title {
+      text-align: center;
+      line-height: 28px; } }
 .homeOpinions__box {
   text-align: center; }
 .homeOpinions__name, .homeOpinions__country {

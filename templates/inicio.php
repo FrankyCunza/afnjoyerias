@@ -21,14 +21,14 @@
 	  )
     );
 ?>
-<div class="container">
+<div class="container none">
     <div class="row">
         <div class="col col-md-12">
             <p class="home__text"><?php the_field( 'text' ); ?></p>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container none">
     <div class="row">
          <div class="owl-carousel owl-theme">
             <div class="item"><h4>1</h4></div>
