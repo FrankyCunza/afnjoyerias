@@ -28,8 +28,8 @@
         </div>
     </div>
 </div>
-<div class="container none">
-    <div class="row">
+<div class="container">
+    <div class="row none">
          <div class="owl-carousel owl-theme">
             <div class="item"><h4>1</h4></div>
             <div class="item"><h4>2</h4></div>
