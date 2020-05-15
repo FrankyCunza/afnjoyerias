@@ -10,6 +10,8 @@
 	    'orderby' => 'rand',
 	  )
     );
+
+    
 ?>
 <?php
     $looprings = new WP_Query( array(
@@ -19,8 +21,7 @@
 	  )
     );
 ?>
-
-<div class="container">
+<div class="container" style="display:none">
     <div class="row">
         <div class="col col-md-12">
             <p class="home__text"><?php the_field( 'text' ); ?></p>
@@ -28,9 +29,8 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 col">
-        <div class="owl-carousel owl-theme">
+    <!-- <div class="row">
+         <div class="owl-carousel owl-theme">
             <div class="item"><h4>1</h4></div>
             <div class="item"><h4>2</h4></div>
             <div class="item"><h4>3</h4></div>
@@ -44,8 +44,7 @@
             <div class="item"><h4>11</h4></div>
             <div class="item"><h4>12</h4></div>
         </div>
-        </div>
-    </div>
+    </div> -->
     
     <div class="row">
         <h2 class="title__two">Anillos</h2>
@@ -57,7 +56,9 @@
                     <?php } ?>
                     <h2 class="homeProducts__title"><?php the_field( 'rings__title' ); ?></h2>
                     <p class="homeProducts__text"><?php the_field( 'rings__description' ); ?></p>
-                    <p class="homeProducts__price">Precio: <span>S/ 1280.00</span></p>
+                    <?php if( get_field( 'postype_price' ) ): ?>
+                        <p class="homeProducts__price">Precio: <span><?php the_field( 'postype_price' ); ?></span></p>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endwhile; wp_reset_query(); ?>   
@@ -72,7 +73,9 @@
                     <?php } ?>
                     <h2 class="homeProducts__title"><?php the_field( 'earrings__title' ); ?></h2>
                     <p class="homeProducts__text"><?php the_field( 'earrings__description' ); ?></p>
-                    <p class="homeProducts__price">Precio: <span>S/ 1280.00</span></p>
+                    <?php if( get_field( 'postype_price' ) ): ?>
+                        <p class="homeProducts__price">Precio: <span><?php the_field( 'postype_price' ); ?></span></p>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endwhile; wp_reset_query(); ?>            

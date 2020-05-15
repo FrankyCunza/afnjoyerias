@@ -24,6 +24,24 @@
         }
         &__list{
             display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 25px;
+            color: #ffffff;
+            i{
+                color: #ffffff;
+            }
+            &:nth-child(1){
+                background: $color__facebook;
+            }
+            &:nth-child(2){
+                background: $color__instagram;
+            }
+            &:nth-child(3){
+                background: $color__linkedin;
+            }
         }
     }
     &__number, &__email{

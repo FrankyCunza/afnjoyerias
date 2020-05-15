@@ -67,7 +67,21 @@ body {
   .header__socials__title, .header__socials__menu {
     display: inline-block; }
   .header__socials__list {
-    display: inline-block; }
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    color: #ffffff; }
+    .header__socials__list i {
+      color: #ffffff; }
+    .header__socials__list:nth-child(1) {
+      background: #3B5998; }
+    .header__socials__list:nth-child(2) {
+      background: #DD27AB; }
+    .header__socials__list:nth-child(3) {
+      background: #0E76A8; }
   .header__number, .header__email {
     display: inline-block;
     line-height: 75px; }
