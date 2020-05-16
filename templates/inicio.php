@@ -41,7 +41,7 @@
                                 <a href="#" class="homeCarousel__whatsapp"><i class="fab fa-whatsapp-square"></i><p>Comprar por Whatsapp</p></a>
                             </div>
                             <div class="homeCarousel__item__left">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/anillo-5.png" alt="" class="homeCarousel__item__left__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/anillo-5.png" alt="Anillo de oro amarillo y oro blanco" class="homeCarousel__item__left__img">
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
             <div class="col col-md-4">
                 <div class="card homeProducts__card">
                     <?php if ( get_field( 'rings_image') ) { ?>
-                        <img src="<?php the_field( 'rings_image' ); ?>" class="homeProducts__img" />
+                        <img src="<?php the_field( 'rings_image' ); ?>" alt="<?php the_field( 'rings__title' ); ?>" class="homeProducts__img" />
                     <?php } ?>
                     <h2 class="homeProducts__title"><?php the_field( 'rings__title' ); ?></h2>
                     <p class="homeProducts__text"><?php the_field( 'rings__description' ); ?></p>
@@ -74,7 +74,7 @@
             <div class="col col-md-4">
                 <div class="card homeProducts__card">
                     <?php if ( get_field( 'earrings_image') ) { ?>
-                        <img src="<?php the_field( 'earrings_image' ); ?>" class="homeProducts__img" />
+                        <img src="<?php the_field( 'earrings_image' ); ?>" alt="<?php the_field( 'earrings__title' ); ?>" class="homeProducts__img" />
                     <?php } ?>
                     <h2 class="homeProducts__title"><?php the_field( 'earrings__title' ); ?></h2>
                     <p class="homeProducts__text"><?php the_field( 'earrings__description' ); ?></p>
