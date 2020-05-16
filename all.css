@@ -54,11 +54,6 @@ body {
 .none {
   display: none; }
 
-@font-face {
-  font-family: 'Vevey';
-  src: url("../fonts/Vevey.woff2") format("woff2"), url("../fonts/Vevey.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 .header {
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
@@ -212,13 +207,18 @@ body {
     .homeProducts__card {
       min-height: 200px; } }
 
+@font-face {
+  font-family: 'Vevey';
+  src: url("../fonts/vevey-webfont.woff2") format("woff2"), url("../fonts/vevey-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .logo {
   padding: 15px 0; }
   @media screen and (max-width: 768px) {
     .logo {
       padding: 0; } }
   .logo__title {
-    font-family: "Vevey";
+    font-family: 'Vevey';
     text-align: center;
     font-size: 44px; }
   .logo__src {
