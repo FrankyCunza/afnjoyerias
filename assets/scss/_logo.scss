@@ -19,6 +19,9 @@
         font-family: 'Vevey';
         text-align: center;
         font-size: 44px;
+        @media screen and (max-width: $tablet){
+            margin-top: 10px;
+        }
     }
     &__src{
         max-width: 60px;

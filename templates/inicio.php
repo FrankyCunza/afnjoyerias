@@ -28,24 +28,29 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row none">
-         <div class="owl-carousel owl-theme">
-            <div class="item"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-            <div class="item"><h4>7</h4></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
+<div class="homeCarousel">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-12">
+                <div class="owl-carousel owl-theme homeCarousel__content">
+                    <div class="item homeCarousel__item">
+                        <div class="homeCarousel__item__box">
+                            <div class="homeCarousel__item__right">
+                                <h2 class="homeCarousel__title">Anillo de oro amarillo y oro blanco</h2>
+                                <p class="homeCarousel__description">Cada una de nuestras joyas cuenta una historia.</p>
+                                <a href="#" class="homeCarousel__whatsapp"><i class="fab fa-whatsapp-square"></i><p>Comprar por Whatsapp</p></a>
+                            </div>
+                            <div class="homeCarousel__item__left">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/anillo-5.png" alt="" class="homeCarousel__item__left__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+</div>
+<div class="container">    
     <div class="row">
         <h2 class="title__two">Anillos</h2>
         <?php while ( $looprings->have_posts() ) : $looprings->the_post(); ?>
