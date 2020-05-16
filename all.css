@@ -164,6 +164,9 @@ body {
     .col-md-3 {
       width: 100%; } }
 
+.col-md-12 {
+  width: 100%; }
+
 .col-md-4 {
   width: 25%;
   margin-top: 15px; }
@@ -221,6 +224,9 @@ body {
     font-family: 'Vevey';
     text-align: center;
     font-size: 44px; }
+    @media screen and (max-width: 768px) {
+      .logo__title {
+        margin-top: 10px; } }
   .logo__src {
     max-width: 60px;
     width: 100%; }
@@ -349,6 +355,62 @@ body {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500; }
+
+.homeCarousel {
+  background: #FFFFFF;
+  margin-bottom: 25px; }
+  @media screen and (max-width: 768px) {
+    .homeCarousel {
+      padding-top: 30px;
+      text-align: center; } }
+  .homeCarousel__title {
+    font-size: 32px;
+    font-weight: 500; }
+    @media screen and (max-width: 768px) {
+      .homeCarousel__title {
+        font-size: 18px; } }
+  .homeCarousel__description {
+    font-size: 26px;
+    background: #FF8000;
+    color: #FFFFFF;
+    max-width: 395px;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0; }
+    @media screen and (max-width: 768px) {
+      .homeCarousel__description {
+        font-size: 16px;
+        text-align: left;
+        max-width: 80%;
+        line-height: 18px;
+        margin: 10px auto; } }
+  .homeCarousel__whatsapp {
+    background: #27D467;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px; }
+    .homeCarousel__whatsapp i, .homeCarousel__whatsapp p {
+      display: inline-block;
+      vertical-align: middle; }
+    .homeCarousel__whatsapp i {
+      font-size: 28px;
+      margin-right: 5px; }
+  .homeCarousel__item__left, .homeCarousel__item__right {
+    width: 50%;
+    vertical-align: middle;
+    display: inline-block; }
+    @media screen and (max-width: 768px) {
+      .homeCarousel__item__left, .homeCarousel__item__right {
+        width: 100%; } }
+  .homeCarousel__item__left {
+    margin-left: -6px; }
+    .homeCarousel__item__left__img {
+      max-width: 100%; }
 
 /*
  *  Owl Carousel - Core
