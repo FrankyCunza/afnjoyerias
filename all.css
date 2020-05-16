@@ -203,6 +203,7 @@ body {
 .homeProducts__card {
   background: #ffffff;
   transition: all .5s;
+  min-height: 270px;
   padding-bottom: 20px; }
   .homeProducts__card:hover {
     transform: scale(1.02); }
