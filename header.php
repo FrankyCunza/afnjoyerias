@@ -66,7 +66,7 @@
 <div class="header">
     <div class="container">
         <div class="header__info">
-            <p class="header__number"><i class="fab fa-whatsapp"></i>+51 945-145-578</p>
+            <p class="header__number"><i class="fab fa-whatsapp"></i>+51 993-371-868</p>
             <p class="header__email"><i class="far fa-envelope"></i>ventas@joyeriasafn.com</p>
         </div>
         <div class="header__logo">
