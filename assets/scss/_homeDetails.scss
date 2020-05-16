@@ -1,0 +1,51 @@
+.homeDetails{
+
+    &__row{
+        padding-top: 45px;
+    }
+    &__ico{
+        background: $color__five;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+        line-height: 106px;
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: -52px;
+        transform: translateX(-50%);
+    }
+
+    &__card{
+        background: #ffffff;
+        box-shadow: $box__shadow;
+        text-align: center;
+        padding: 20px 20px 30px 20px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        min-height: 240px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title{
+        font-size: 22px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+    &__text{
+        margin-top: 15px;
+        display: block;
+        padding: 0 15px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

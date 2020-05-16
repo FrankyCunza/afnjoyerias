@@ -1,11 +1,23 @@
+@font-face {
+    font-family: 'Vevey';
+    src: url('../fonts/vevey-webfont.woff2') format('woff2'),
+        url('../fonts/vevey-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .logo{
-    background: $color_two;
-    padding: 15px 20px;
-    display: table;
-    margin: 0 auto 20px auto;
+    // background: $color_two;
+    padding: 15px 0;
+    // display: table;
+    // margin: 0 auto 20px auto;
+    @media screen and (max-width: $tablet){
+        padding: 0;
+    }
 
     &__title{
-        font-family: $font_two;
+        font-family: 'Vevey';
+        text-align: center;
         font-size: 44px;
     }
     &__src{

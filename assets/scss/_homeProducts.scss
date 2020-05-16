@@ -1,14 +1,50 @@
 .homeProducts{
-
+    
+    
     &__img{
         width: 100%;
         display: block;
     }
+    
+    &__text{
+        text-align: center;
+        margin-top: 5px;
+        font-family: $font_one;
+        display: -webkit-box;
+        font-size: 15px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        padding: 0 25px;
+        overflow: hidden;
+    }
+    &__title{
+        font-family: $font_one;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    &__price{
+        margin-top: 10px;
+        text-align: center;
+        font-family: $font_one;
+
+        span{
+            font-weight: 500;
+        }
+    }
 
     &__card{
+        background: #ffffff;
         transition: all .5s;
+        padding-bottom: 20px;;
         &:hover{
             transform: scale(1.02);
+        }
+        @media screen and (max-width: 480px){
+            min-height: 200px;
         }
     }
 }

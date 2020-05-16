@@ -1,0 +1,11 @@
+.footer{
+    background: $color__five;
+    line-height: 57px;
+    margin-top: 55px;
+    text-align: center;
+    &__text{
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

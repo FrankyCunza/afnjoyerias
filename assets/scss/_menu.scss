@@ -1,0 +1,14 @@
+.menu{
+
+    li{
+        display: inline-block;
+    }
+    li + li{
+        margin-left: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: $color_one;
+        line-height: 75px;
+    }
+}
