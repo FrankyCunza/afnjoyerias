@@ -77,9 +77,9 @@
         <div class="header__socials">
             <p class="header__socials__title">Siguenos:</p>
             <ul class="header__socials__menu">
-                <li class="header__socials__list"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="header__socials__list"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="header__socials__list"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="header__socials__list"><a href="https://www.facebook.com/joyeriasafn/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="header__socials__list"><a href="https://www.instagram.com/afnjoyeria/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="header__socials__list"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
         </div>
         <?php 
