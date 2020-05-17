@@ -28,28 +28,7 @@
         </div>
     </div>
 </div>
-<div class="homeCarousel">
-    <div class="container">
-        <div class="row">
-            <div class="col col-md-12">
-                <div class="owl-carousel owl-theme homeCarousel__content">
-                    <div class="item homeCarousel__item">
-                        <div class="homeCarousel__item__box">
-                            <div class="homeCarousel__item__right">
-                                <h2 class="homeCarousel__title">Anillo de oro amarillo y oro blanco</h2>
-                                <p class="homeCarousel__description">Cada una de nuestras joyas cuenta una historia.</p>
-                                <a href="#" class="homeCarousel__whatsapp"><i class="fab fa-whatsapp-square"></i><p>Comprar por Whatsapp</p></a>
-                            </div>
-                            <div class="homeCarousel__item__left">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/anillo-5.png" alt="Anillo de oro amarillo y oro blanco" class="homeCarousel__item__left__img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php part('carousel'); ?>
 <div class="container">    
     <div class="row">
         <h2 class="title__two">Anillos</h2>
@@ -123,77 +102,6 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="homeOpinions__top">
-                <p class="homeOpinions__title">Opiniones de nuestros clientes</p>
-            </div>
-        </div>
-        <div class="col-md-3 col">
-            <div class="homeOpinions__boxes">
-                <div class="homeOpinions__box">
-                    <div class="homeOpinions__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/opinion1.png" alt="">
-                    </div>
-                    <div class="homeOpinions__stars">
-                        <ul class="homeOpinions__stars__menu">
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="homeOpinions__stars"></div>
-                    <p class="homeOpinions__name">Juana Martinez</p>
-                    <div class="homeOpinions__country">España</div>
-                    <p class="homeOpinions__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col">
-            <div class="homeOpinions__boxes">
-                <div class="homeOpinions__box">
-                    <div class="homeOpinions__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/opinion2.png" alt="">
-                    </div>
-                    <div class="homeOpinions__stars">
-                        <ul class="homeOpinions__stars__menu">
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <p class="homeOpinions__name">Juana Martinez</p>
-                    <div class="homeOpinions__country">España</div>
-                    <p class="homeOpinions__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col">
-            <div class="homeOpinions__boxes">
-                <div class="homeOpinions__box">
-                    <div class="homeOpinions__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/opinion3.png" alt="">
-                    </div>
-                    <div class="homeOpinions__stars">
-                        <ul class="homeOpinions__stars__menu">
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                            <li class="homeOpinions__stars__list"><i class="fas fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="homeOpinions__stars"></div>
-                    <p class="homeOpinions__name">Juana Martinez</p>
-                    <div class="homeOpinions__country">España</div>
-                    <p class="homeOpinions__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php part('testimonies'); ?>
 </div>
 <?php get_footer(); ?>

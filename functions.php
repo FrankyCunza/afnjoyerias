@@ -1,6 +1,11 @@
 <?php 
 
 
+function part( $name, $suffix = ''){
+    get_template_part('parts/' . $name, $suffix);
+}
+
+
 function wp_jquery_manager_plugin_front_end_scripts() {
     $wp_admin = is_admin();
     $wp_customizer = is_customize_preview();
