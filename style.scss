@@ -1,3 +1,4 @@
+@import 'assets/scss/fontawesome';
 @import 'assets/scss/reset';
 @import 'assets/scss/variables';
 @import 'assets/scss/base';
@@ -16,9 +17,9 @@
 @import 'assets/scss/footer';
 @import 'assets/scss/homeCarousel';
 @import 'assets/scss/owl_carousel/owl.carousel.scss';
-@import 'assets/scss/fontawesome';
 
-@import url(all.css);
+
+// @import url(all.css);
 @font-face {
     font-family: 'Vevey';
     src: url('assets/fonts/Vevey.woff2') format('woff2'),
