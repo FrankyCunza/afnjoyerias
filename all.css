@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap");
+@import url(all.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -5144,5 +5145,13 @@ body {
 .fa,
 .fas {
   font-weight: 900; }
+
+@font-face {
+  font-family: 'Vevey';
+  src: url("assets/fonts/Vevey.woff2") format("woff2"), url("assets/fonts/Vevey.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.logo__title {
+  font-family: 'Vevey'; }
 
 /*# sourceMappingURL=all.css.map */

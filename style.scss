@@ -17,3 +17,15 @@
 @import 'assets/scss/homeCarousel';
 @import 'assets/scss/owl_carousel/owl.carousel.scss';
 @import 'assets/scss/fontawesome';
+
+@import url(all.css);
+@font-face {
+    font-family: 'Vevey';
+    src: url('assets/fonts/Vevey.woff2') format('woff2'),
+        url('assets/fonts/Vevey.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.logo__title{
+    font-family: 'Vevey';
+}
