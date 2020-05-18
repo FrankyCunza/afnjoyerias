@@ -11,6 +11,7 @@
     add_action('init', 'Inicio', 0);
 	add_action('init', 'earrings_post_types', 0);
 	add_action('init', 'rings_post_types', 0);
+	add_action('init', 'necklaces_post_types', 0);
     add_action('init', 'aretes_taxonomy');
 
     function Inicio(){
@@ -126,7 +127,6 @@ function rings_post_types() {
 
 
 //taxonomia avanzada
-add_action('init', 'aretes_taxonomy');
 
 function aretes_taxonomy(){
 	$labels = array(
@@ -157,4 +157,55 @@ function aretes_taxonomy(){
 		'rewrite'				=> array( 'slug' => 'meal'),
 	);
 	register_taxonomy( 'tipos-de-aretes', 'earrings', $args );
+}
+
+
+
+
+
+
+
+function necklaces_post_types() {
+	//labels
+	$labels = array(
+		'name'					=> _x( 'Collares', 'Post Type General Name', 'gourmet-artist' ),
+		'singular-name' 		=> _x( 'Collares', 'Post Type Singular Name', 'gourmet-artist' ),
+		'menu_name' 			=> __( 'Collares', 'gourmet-artist' ),
+		'parent_item_colon' 	=> __( 'Parent Collar', 'gourmet-artist' ),
+		'all_items'				=> __( 'Todos los Collares', 'gourmet-artist' ),
+		'view_item' 			=> __( 'View type', 'gourmet-artist' ),
+		'add_new_item'			=> __( 'Agregar nuevo tipo', 'gourmet-artist' ),
+		'add_new' 				=> __( 'Agregar nuevo collar', 'gourmet-artist' ),
+		'edit_item'				=> __( 'Editar collar', 'gourmet-artist' ),
+		'update_item'			=> __( 'Update type', 'gourmet-artist' ),
+		'search_items'			=> __( 'Search type', 'gourmet-artist' ),
+		'not_found'				=> __( 'Not Recipes Found', 'gourmet-artist' ),
+		'not_found_in_trash' => __( 'Not Found in Trash', 'gourmet-artist' ),
+	);
+	
+	//Another Customizations
+	$args = array(
+		'label'  		=> __( 'Collares', 'gourmet-artist'),
+		'description' 	=> __( 'Collares for gourmet Artistry', 'gourmet-artist'),
+		'labels'			=> $labels,
+		'supports' 		=> array( 'title', 'editor', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'),
+		'hierarchical' => false,
+		'pubic'			=> true,
+		'show_ui'		=> true,
+		'show_in_menus'=> true,
+		'show_in_nav_menus'		=> true,
+		'show_in_admin_bar'  	=> true,
+		'show_position'			=> 5,
+		'menu_icon'					=> 'dashicons-admin-page',
+		'can_export'				=> true,
+		'has_archive'				=> true,
+		'exclude_from_search'	=> false,
+		'capability_type'				=> 'page',
+		//insertar codigo para single-{$posttype}
+        	'publicly_queryable'    => true,
+	);
+
+
+	// register the post type
+	register_post_type( 'necklaces', $args);
 }

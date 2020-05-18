@@ -21,6 +21,14 @@
 	  )
     );
 ?>
+<?php
+    $loopnecklaces = new WP_Query( array(
+	    'post_type' => 'necklaces',
+	    'posts_per_page' => 4,
+	    'orderby' => 'rand',
+	  )
+    );
+?>
 <div class="container none">
     <div class="row">
         <div class="col col-md-12">
